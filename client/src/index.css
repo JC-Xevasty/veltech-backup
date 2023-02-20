@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Grandview";
+  src: url("./assets/fonts/grandview/Grandview.ttf");
+}
+
+@font-face {
+  font-family: "Grandview-Bold";
+  src: url("./assets/fonts/grandview/GrandviewBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/inter/Inter.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/inter/InterBold.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0 scroll-pt-[7.25rem];
+  }
+}
+
+/* Home Banner Carousel */
+.home-carousel-slider .swiper-button-prev {
+  background-image: url("./assets/home/Carousel-Button-Prev.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 25px;
+}
+
+.home-carousel-slider .swiper-button-prev::after {
+  display: none;
+}
+
+.home-carousel-slider .swiper-button-next {
+  background-image: url("./assets/home/Carousel-Button-Next.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 25px;
+}
+
+.home-carousel-slider .swiper-button-next::after {
+  display: none;
+}
+
+.home-carousel-slider .swiper-button-prev:hover,
+.home-carousel-slider .swiper-button-next:hover {
+  transform: scale(120%);
+}
+
+/* Mini Carousel */
+.mini-carousel-slider .mini-carousel-bullets {
+  display: flex;
+  margin-left: 15px;
+  margin-bottom: 2.5px;
+}
+
+.mini-carousel-slider .mini-carousel-bullets .swiper-pagination-bullet {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  border-radius: 0;
+  opacity: 0.3;
+}
+
+.mini-carousel-slider .mini-carousel-bullets .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+dialog::backdrop {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}

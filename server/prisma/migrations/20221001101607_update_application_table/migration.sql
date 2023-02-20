@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Application" ALTER COLUMN "logoPath" DROP NOT NULL,
+ALTER COLUMN "faviconPath" DROP NOT NULL,
+ALTER COLUMN "headerPath" DROP NOT NULL;

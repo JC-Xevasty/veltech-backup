@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <body style="background-color: #ECEEF1; width: 100%; height: 100%;">
+    <table style="display: table; grid-template-columns: repeat(3, 1fr); width: 300px; margin-left: auto; margin-right: auto; padding-top: 100px; padding-bottom: 100px;">
+      <tr>
+        <td colspan="1"></td>
+
+        <td colspan="1">
+          <img style="display: block; width: 250px; margin-left: auto; margin-right: auto;" src="cid:Image-Logo" alt="Image-Logo" >
+
+          <div style="display: block; background-color: #FFFFFF; width: 300px; margin-top: 30px; padding: 30px;">
+            <span style="display: block; text-align: center; font-size: 24px; margin-left: auto; margin-right: auto;">Password Reset Code</span>
+          
+            <p style="display: block; text-align: center; font-size: 12px; margin-left: auto; margin-right: auto;">If you’ve lost your password or wish to reset it, use the code below to get started.</p>
+
+            <span style="display: block; text-align: center; font-size: 45px; font-weight: 700; margin-left: auto; margin-right: auto; margin-top: 15px; margin-bottom: 15px;">{{ resetCode }}</span>
+
+            <p style="display: block; text-align: center; font-size: 10px; margin-left: auto; margin-right: auto;">If you did not request a password reset, you can safely ignore this email. Only a person with access to your email can reset your account password.</p>
+          </div>
+        </td>
+
+        <td colspan="1"></td>
+      </tr>
+    </table>
+  </body>
+</html>

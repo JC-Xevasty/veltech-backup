@@ -1,0 +1,27 @@
+{
+  "name": "veltech-inc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alascops/veltech-inc.git",
+  "author": "Xevasty Jimenez <xvstyprogramming@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.0.1"
+  },
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "build": "yarn workspace client build",
+    "start": "yarn workspace server start"
+  },
+  "_moduleAliases": {
+    "@config": "server/src/config",
+    "@controllers": "server/src/controllers",
+    "@functions": "server/src/functions",
+    "@middlewares": "server/src/middlewares",
+    "@routers": "server/src/routers"
+  }
+}

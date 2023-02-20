@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Contact" ALTER COLUMN "message" SET DATA TYPE VARCHAR(2048);
